@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>FitGo</title>
+</head>
+
+<body>
+    <!-- nav bar -->
+    <nav class="navbar">
+
+        <img src="/assets/images/logo.png" class="logo" alt="almuejam logo">
+        <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+        <ul class="nav-links" id="navLinks">
+            <li class="close-btn"><span onclick="toggleMenu()">✖</span></li>
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="">Menu</a></li>
+        </ul>
+
+    </nav>
+
+
+    <section class="hero-split">
+
+        <!-- WEIGHT LOSS -->
+        <div class="hero-card cut">
+            <div class="overlay">
+                <h2>Weight Loss</h2>
+                <p>Light meals, low calories, clean ingredients</p>
+                <a href="menu-cut.html" class="btn">View Menu</a>
+            </div>
+        </div>
+
+        <!-- MUSCLE GAIN -->
+        <div class="hero-card bulk">
+            <div class="overlay">
+                <h2>Muscle Gain</h2>
+                <p>High protein meals, built for strength</p>
+                <a href="menu-bulk.html" class="btn">View Menu</a>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Left -->
+            <div class="footer-section">
+                <h3>FITGO</h3>
+                <p>
+                    A professional study space in Amman providing a calm and productive
+                    environment for students and professionals.
+                </p>
+            </div>
+
+            <!-- Middle -->
+            <div class="footer-section">
+                <h3>Contact Information :</h3>
+                <ul class="contact-list">
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Near University of Jordan, Amman</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+962 791455403</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>info@fitgo.com</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Right -->
+            <div class="footer-section">
+                <h3>Follow us</h3>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/almujam_study_house/" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/61574474686486/" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </div>
+
+                <h4>Working Hours:</h4>
+                <ul class="hours">
+                    <li>• Daily: 8:00 AM - 12:00 AM</li>
+                    <li>• Friday: 2PM - 12:00 AM</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 FitGo snaks. All rights reserved.
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            document.getElementById("navLinks").classList.toggle("show");
+        }
+    </script>
+
+
+</body>
+
+</html>

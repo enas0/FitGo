@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | FitGO</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: radial-gradient(circle at top, #00160f, #000);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        /* ===== Login Box ===== */
+
+        .login-wrapper {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .login-box {
+            width: 100%;
+            max-width: 420px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(18px);
+            padding: 45px 35px;
+            border-radius: 22px;
+            box-shadow: 0 0 40px rgba(0, 255, 174, .12);
+            animation: fadeUp .8s ease;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(25px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .logo {
+            text-align: center;
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .logo span {
+            color: #00ffae;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #aaa;
+            margin-bottom: 35px;
+        }
+
+        /* ===== Inputs ===== */
+
+        .input-box {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .input-box i {
+            position: absolute;
+            top: 50%;
+            left: 15px;
+            transform: translateY(-50%);
+            color: #00ffae;
+        }
+
+        .input-box input {
+            width: 100%;
+            padding: 14px 15px 14px 45px;
+            background: rgba(0, 0, 0, .6);
+            border: 1px solid rgba(255, 255, 255, .1);
+            border-radius: 12px;
+            color: white;
+            outline: none;
+            transition: .3s;
+        }
+
+        .input-box input:focus {
+            border-color: #00ffae;
+            box-shadow: 0 0 12px rgba(0, 255, 174, .3);
+        }
+
+        /* ===== Options ===== */
+
+        .options {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+
+        .options a {
+            color: #00ffae;
+            text-decoration: none;
+        }
+
+        /* ===== Button ===== */
+
+        .login-btn {
+            width: 100%;
+            padding: 14px;
+            background: #00ffae;
+            border: none;
+            border-radius: 14px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: .3s;
+        }
+
+        .login-btn:hover {
+            transform: scale(1.04);
+            box-shadow: 0 0 20px rgba(0, 255, 174, .5);
+        }
+
+        /* ===== Footer ===== */
+
+        .register {
+            margin-top: 25px;
+            text-align: center;
+            color: #aaa;
+        }
+
+        .register a {
+            color: #00ffae;
+            text-decoration: none;
+        }
+
+
+        .back-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(0, 255, 174, 0.1);
+            color: #00ffae;
+            padding: 10px 15px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            background: rgba(0, 255, 174, 0.2);
+            box-shadow: 0 0 12px rgba(0, 255, 174, .4);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-wrapper">
+        <!-- زر الرجوع -->
+        <a href="../index.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Home</a>
+
+        <div class="login-box">
+
+            <div class="logo">Fit<span>GO</span></div>
+            <p class="subtitle">Welcome back, login to your account</p>
+
+            <form>
+
+                <div class="input-box">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="Email address" required>
+                </div>
+
+                <div class="input-box">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Password" required>
+                </div>
+
+                <div class="options">
+                    <label>
+                        <input type="checkbox"> Remember me
+                    </label>
+                    <a href="#">Forgot password?</a>
+                </div>
+
+                <button class="login-btn">Login</button>
+
+            </form>
+
+            <div class="register">
+                Don't have an account? <a href="signup.html">Sign up</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

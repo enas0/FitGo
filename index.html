@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author">
+    <meta name="author" content="ENAS">
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
     <title>FitGo</title>
 </head>
 
@@ -22,162 +22,175 @@
             <li class="close-btn"><span onclick="toggleMenu()">✖</span></li>
 
             <li><a href="index.html">Home</a></li>
-            <li><a href="pages/about.html">About</a></li>
-            <li><a href="#">Contact</a></li>
             <li><a href="">Menu</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="pages/about.html">About</a></li>
+            <li><a href="pages/login.html" id="signup-button">log in</a></li>
         </ul>
 
     </nav>
 
+    <div class="hero-wrapper">
+        <div class="hero">
 
-    <section class="hero-split">
+            <h1 class="title">
+                <span id="line1" class="line1"></span><br>
 
-        <!-- WEIGHT LOSS -->
-        <div class="hero-card cut">
-            <div class="overlay">
-                <h2>Weight Loss</h2>
-                <p>Light meals, low calories, clean ingredients</p>
-                <a href="menu-cut.html" class="btn">View Menu</a>
-            </div>
+            </h1>
+
+            <p id="sub" class="sub"></p>
+
+            <a href="#fitness">Choose Your Plan</a>
+
+
         </div>
 
-        <!-- MUSCLE GAIN -->
-        <div class="hero-card bulk">
-            <div class="overlay">
-                <h2>Muscle Gain</h2>
-                <p>High protein meals, built for strength</p>
-                <a href="menu-bulk.html" class="btn">View Menu</a>
+    </div>
+
+    <div class="section" id="fitness">
+
+        <div class="container">
+
+            <h1> Choose Your Fitness Goal</h1>
+            <p class="sub">What is your goal today? Choose your plan and start your transformation.</p>
+
+            <div class="cards">
+
+                <!-- CUT CARD -->
+                <div class="card">
+                    <h2><i class="fa-solid fa-fire-flame-curved"></i> Fat Loss Program</h2>
+
+                    <p>Designed to burn fat, boost metabolism and reshape your body.</p>
+
+                    <ul>
+                        <li>High protein meals</li>
+                        <li>Low calories & sugar</li>
+                        <li>Boost metabolism</li>
+                        <li>Improve energy levels</li>
+                    </ul>
+
+                    <button>Start Cutting</button>
+                </div>
+
+                <!-- BULK CARD -->
+                <div class="card">
+                    <h2><i class="fa-solid fa-dumbbell"></i> Muscle Gain Program</h2>
+
+                    <p>Built to maximize muscle growth and strength performance.</p>
+
+                    <ul>
+                        <li>High calorie meals</li>
+                        <li>Clean bulking food</li>
+                        <li>Max protein intake</li>
+                        <li>Strength optimization</li>
+                    </ul>
+
+                    <button>Start Bulking</button>
+                </div>
+
             </div>
+
+        </div>
+
+    </div>
+
+    <section class="stats-section">
+
+        <h2>Why Healthy Nutrition Matters</h2>
+
+        <div class="stats-grid">
+
+            <div class="stat">
+                <span class="num" data-target="80">0</span>
+                <p>% of body transformation depends on nutrition</p>
+            </div>
+
+            <div class="stat">
+                <span class="num" data-target="30">0</span>
+                <p>% boost in metabolism with proper hydration</p>
+            </div>
+
+            <div class="stat">
+                <span class="num" data-target="35">0</span>
+                <p>% lower risk of chronic diseases</p>
+            </div>
+
+            <div class="stat">
+                <span class="num" data-target="40">0</span>
+                <p>% higher daily energy levels</p>
+            </div>
+
         </div>
 
     </section>
 
 
 
-    <!-- VIDEO PRESENTATION SECTION -->
-    <section class="video-showcase">
+    <footer class="site-footer">
 
-        <div class="video-wrapper">
-            <iframe width="877" height="493" src="https://www.youtube.com/embed/Asqdy71l0EE"
-                title="We Believe in Real Food™ | Whole Foods Market" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-
-        <div class="video-content">
-            <h2>Not Just Food</h2>
-            <p>
-                Every burger is designed to match your goal.
-                Whether you are cutting fat or building muscle,
-                FitGo fuels your journey.
-            </p>
-        </div>
-
-    </section>
-
-    <!-- PRO AUTO FOCUS SECTION -->
-    <section class="pro-focus">
-
-        <div class="pro-focus-track">
-
-            <div class="pro-card active">
-                <img src="assets/images/losswidth.png" alt="">
-                <div class="pro-overlay">
-                    <h3>Lean Chicken Burger</h3>
-                    <a href="menu-cut.html">View Menu</a>
-                </div>
-            </div>
-
-            <div class="pro-card">
-                <img src="assets/images/getwidth.png" alt="">
-                <div class="pro-overlay">
-                    <h3>Beef Power Burger</h3>
-                    <a href="menu-bulk.html">View Menu</a>
-                </div>
-            </div>
-
-            <div class="pro-card">
-                <img src="assets/images/losswidth.png" alt="">
-                <div class="pro-overlay">
-                    <h3>Veggie Protein Burger</h3>
-                    <a href="menu-cut.html">View Menu</a>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- progress -->
-        <div class="focus-progress">
-            <span class="dot"></span>
-            <span class="dot active"></span>
-            <span class="dot"></span>
-        </div>
-
-    </section>
-
-
-
-
-    <footer class="footer">
         <div class="footer-container">
-            <!-- Left -->
-            <div class="footer-section">
-                <h3>FITGO</h3>
+
+            <!-- Brand -->
+            <div class="footer-col">
+                <h2 class="footer-logo">Fit<span>GO</span></h2>
                 <p>
-                    A professional study space in Amman providing a calm and productive
-                    environment for students and professionals.
+                    FitGO is your destination for healthy meals, smart nutrition,
+                    and real transformation. Eat better. Live stronger.
                 </p>
             </div>
 
-            <!-- Middle -->
-            <div class="footer-section">
-                <h3>Contact Information :</h3>
-                <ul class="contact-list">
-                    <li>
-                        <i class="fa-solid fa-location-dot"></i>
-                        <span>Near University of Jordan, Amman</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-phone"></i>
-                        <span>+962 791455403</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-envelope"></i>
-                        <span>info@fitgo.com</span>
-                    </li>
+            <!-- Pages -->
+            <div class="footer-col">
+                <h3>Pages</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Programs</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </div>
 
-            <!-- Right -->
-            <div class="footer-section">
-                <h3>Follow us</h3>
-                <div class="social-icons">
-                    <a href="https://www.instagram.com/almujam_study_house/" aria-label="Instagram">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a href="https://www.facebook.com/61574474686486/" aria-label="Facebook">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </a>
+            <!-- Support -->
+            <div class="footer-col">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Delivery Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <p><i class="fa-solid fa-location-dot"></i> Amman, Jordan</p>
+                <p><i class="fa-solid fa-phone"></i> +962 7 9196 4479</p>
+                <p><i class="fa-solid fa-envelope"></i> info@fitgo.com</p>
+
+
+                <div class="social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
                 </div>
-
-                <h4>Working Hours:</h4>
-                <ul class="hours">
-                    <li>• Daily: 8:00 AM - 12:00 AM</li>
-                    <li>• Friday: 2PM - 12:00 AM</li>
-                </ul>
             </div>
+
         </div>
 
         <div class="footer-bottom">
-            © 2026 FitGo snaks. All rights reserved.
+            <p>© 2026 FitGO. All rights reserved.</p>
         </div>
+
     </footer>
+
+
     <script src="assets/js/index.js">
 
     </script>
-
-
-
 </body>
 
 </html>
